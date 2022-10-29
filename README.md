@@ -10,11 +10,14 @@ use :
 ```coffee
 #!/usr/bin/env coffee
 
-> ./pkg > BinSet
+> ./pkg/_ > BinSet
 
 set = new BinSet
 
-txt = """set.add(new Uint8Array([1]))
+txt = """set.add(Buffer.from [1])
+set.has([2])
+set.has([1])
+set.add(new Uint8Array([1]))
 set.has([1])
 set.size
 set.dump()
@@ -26,6 +29,9 @@ set.delete([1])
 set.has([2])""".split('\n')
 
 [
+  set.add(Buffer.from [1])
+  set.has([2])
+  set.has([1])
   set.add(new Uint8Array([1]))
   set.has([1])
   set.dump()
