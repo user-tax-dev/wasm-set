@@ -1,4 +1,4 @@
-<!-- EDIT /Users/z/iuser/set-wasm/README.md -->
+<!-- EDIT /Users/z/user/set-wasm/README.md -->
 
 # wasm-set
 
