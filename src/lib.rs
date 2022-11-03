@@ -1,4 +1,3 @@
-use itertools::sorted;
 use std::collections::BTreeSet;
 
 use wasm_bindgen::prelude::*;
@@ -36,7 +35,7 @@ impl BinSet {
 
   pub fn dump(&self) -> Vec<u8> {
     let mut li = Vec::new();
-    for i in sorted(&self.set) {
+    for i in &self.set {
       li.extend(&i[..]);
     }
     li
