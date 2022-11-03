@@ -1,6 +1,6 @@
 {
   "name": "@iuser/wasm-set",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "_.js",
   "license": "Apache-2.0",
   "repository": "https://github.com/iuser-dev/wasm-set",
